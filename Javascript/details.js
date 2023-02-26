@@ -7,12 +7,12 @@ const id = params.get("id");
 
 console.log(id)
 
-const url = "https://legacy--api.herokuapp.com/api/v1/characters/" + id;
+const urlDetails = "https://legacy--api.herokuapp.com/api/v1/characters/" + id;
 
 console.log
 
 async function charSpecific() {
-    const response = await fetch (url);
+    const response = await fetch (urlDetails);
     const details = await response.json();
 
     console.log(details);
