@@ -1,9 +1,19 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    list-style: none;
 }
 
 h1 {
     margin-left: 1rem;
+}
+
+input, button {
+    padding: 5px;
+}
+
+.container{
+    max-width: 900px;
 }
 
 .result {
@@ -40,6 +50,10 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .details {
@@ -65,9 +79,6 @@ h2 {
 
 /*Details*/
 
-.character-facts {
-    
-}
 
 /*error messages*/
 
@@ -94,4 +105,33 @@ h2 {
     color: orange;
     border-color: orange;
     background: rgba(100, 0, 0, 0.1);
+}
+
+
+/* contact */
+
+.flexcontainercontact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.flexitemcontact {
+    flex: 1;
+}
+
+.formsizer {
+    max-width: 200px;
+    display: inline-block;
+}
+
+.formbackground {
+    text-align: center;
+}
+
+.form-error {
+    display: none;
+    color: red;
+    margin: 5px;
 }

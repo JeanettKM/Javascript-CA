@@ -5,11 +5,9 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString)
 const id = params.get("id");
 
-console.log(id)
 
 const urlDetails = "https://legacy--api.herokuapp.com/api/v1/characters/" + id;
 
-console.log
 
 async function charSpecific() {
     try {
