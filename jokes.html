@@ -1,0 +1,11 @@
+const url = "https://legacy--api.herokuapp.com/api/v1/characters"; const
+resultsContainer = document.querySelector(".results") async function
+getCharacters() { const response = await fetch (url); const results = await
+response.json(); const facts = results; resultsContainer.innerHTML =""; for(let
+i = 0; i < facts.length; i++) { console.log(facts[i].name); if(i === 6) { break;
+} resultsContainer.innerHTML += `<a
+  href="details.html?id=${facts.id}"
+  class="result"
+>
+  <h2>${facts[i].name}</h2></a
+>`; } } getCharacters();

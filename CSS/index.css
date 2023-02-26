@@ -47,6 +47,12 @@ li {
     justify-content: space-evenly;
 }
 
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -71,4 +77,37 @@ li {
     100% {
         transform: rotate(360deg);
     }
+}
+
+/*Details*/
+
+.character-facts {
+    
+}
+
+//*error messages*//
+
+.message {
+    padding: 1rem;
+    border: 1px solid grey;
+    color-scheme: grey;
+
+}
+
+.success {
+    color: green;
+    border-color: green;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.error {
+    color: red;
+    border-color: red;
+    background: rgba(255, 0, 0, 0.1)
+}
+
+.warning {
+    color: orange;
+    border-color: orange;
+    background: rgba(100, 0, 0, 0.1);
 }

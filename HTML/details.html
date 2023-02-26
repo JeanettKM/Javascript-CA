@@ -5,21 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Details</title>
-    <script type="module" src="/Javascript/script.js"></script>
-    <style src="/CSS/index.css"></style>
+    <link href="/CSS/index.css" rel="stylesheet" />
+    <script defer src="/Javascript/details.js"></script>
+    <script defer src="/Javascript/script.js"></script>
   </head>
   <body>
     <header>
-      <div>
-        <h1>Welcome to my Javascript CA - Details page</h1>
+      <div class="Marginheading">
+        <h1>Welcome to my Javascript CA - Details</h1>
       </div>
       <div>
-        <nav>
-          <li><a href="/HTML/index.html">Home</a></li>
-          <li><a href="/HTML/details.html">Details</a></li>
-          <li><a href="/HTML/contact.html">Contact</a></li>
+        <nav class="flexcontainer">
+          <li class="flexitem"><a href="/HTML/index.html">Home</a></li>
+          <li class="flexitem"><a href="/HTML/contact.html">Contact</a></li>
         </nav>
       </div>
     </header>
+    <main>
+      <div class="container Marginheading">
+        <h2>Character information</h2>
+        <div class="results">
+          <div class="loader"></div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
